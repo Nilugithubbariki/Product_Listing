@@ -8,29 +8,9 @@ const Navbar = () => {
     <nav className="bg-gray-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white font-bold text-xl">Product Listing</div>
-        <ul className="flex space-x-4 text-sm">
-          <li>
-            <a href="#" className="text-white hover:text-gray-300">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-white hover:text-gray-300">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-white hover:text-gray-300">
-              Services
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-white hover:text-gray-300">
-              Contact
-            </a>
-          </li>
+        <ul className="flex space-x-4 text-xl">
           <li className="text-white hover:text-gray-300">
-            <Link to="/cart">Cart({cartItems.length}) </Link>
+            <Link to="/cart">Cart({cartItems.length} items) </Link>
           </li>
         </ul>
       </div>
